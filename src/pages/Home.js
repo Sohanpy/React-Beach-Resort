@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 import Services from '../components/Services';
 import FeaturedRooms from '../components/FeaturedRooms';
 
+import Button from '../components/styledHero';
 
 export default function Home() {
     return (
-        <>
+        <React.Fragment>
             <Hero>
                 <Banner title="Luxurious Rooms" subtitle="delux rooms starting at $299">
                     <Link to="/rooms" className="btn-primary">
@@ -18,6 +19,7 @@ export default function Home() {
             </Hero>
             <Services />
             <FeaturedRooms />
-        </>
-    )
+            <Button>gsh</Button>
+        </React.Fragment>
+    );
 }
